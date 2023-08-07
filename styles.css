@@ -1,0 +1,141 @@
+/* Heading styles */
+.heading {
+    font-family: "metropolis";
+    color: #007F61;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+}
+
+.heading:before,
+.heading:after {
+    background-color: lightgrey;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.heading:before {
+    right: 0.7em;
+    margin-left: -40%;
+}
+
+.heading:after {
+    left: 0.6em;
+    margin-right: -40%;
+}
+
+/* Containers style */
+.main-container {
+    margin: 4% 25% 25%;
+}
+
+.selection-container {
+    border: 2px solid lightgrey; /* Color provided in the design is not working in IE browser so I had to use similar lightgrey color  */
+    margin: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.pairs-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.shipping-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0px;
+}
+
+.copyright-container {
+    text-align: right;
+}
+
+.table-display {
+    margin-left: 30px;
+}
+
+.number-of-pairs-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    width: 70%;
+}
+
+.selected-container {
+    border: 2px solid #007F61;
+    background-color: #F4FBF9;
+}
+
+/* Element styles */
+P {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+select {
+    width: 80px;
+}
+
+.order-selection {
+    accent-color: #007F61;
+    margin-left: 20px;
+}
+
+.striked-text {
+    font-weight: normal;
+    font-size: 15px;
+    color: grey;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+
+.size-color {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.percentage-off {
+    text-align: center;
+    margin-top: 5px;
+    width: 20%;
+}
+
+.green-text {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #007F61;
+}
+
+.cart-button {
+    color: white;
+    background-color: #007F61;
+    width: 95%;
+    height: 60px;
+    border-width: 0;
+    border-radius: 8px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.copyright-text {
+    font-style: italic;
+    font-weight: normal;
+    font-family: inter;
+    margin: 0;
+    margin-right: 20px;
+}

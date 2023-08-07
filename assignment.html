@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="assignment.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <h2 class="heading"> Bundle & Save </h2>
+    <!-- <p>This is another Top Container </p> -->
+    <div class="selection-container" id="selectionContainerTopbox">
+      <div class="pairs-container">
+        <input type="radio" name="orderSelection" value="1" class="order-selection" onclick="onOrderSelect(this.value)" />
+        <div class="number-of-pairs-container">
+          <div>
+            <p> 1 Pair</p>
+            <p> DKK 195.00</p>
+          </div>
+        </div>
+        <div class="percentage-off">
+          <p> 50% OFF</p>
+        </div>
+      </div>
+      <div id="selectionContainer1" class="table-display">
+        <table>
+          <tr class="size-color">
+            <th></th>
+            <th>Size</th>
+            <th>Colour</th>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <p>This is Middle Container </p> -->
+    <div class="selection-container" id="selectionContainerMiddlebox">
+      <div class="pairs-container">
+        <input type="radio" name="orderSelection" value="2" class="order-selection" onclick="onOrderSelect(this.value)" />
+        <div class="number-of-pairs-container">
+          <div>
+            <p> 2 Pairs</p>
+            <p> DKK 345.00</p>
+          </div>
+          <div class="striked-text">
+            <p><s> DKK 195.00 </s></p>
+          </div>
+        </div>
+        <div class="percentage-off">
+          <p class="green-text"> Most Popular</p>
+          <p> 40% OFF</p>
+        </div>
+      </div>
+      <div id="selectionContainer2" class="table-display">
+        <table>
+          <tr class="size-color">
+            <th></th>
+            <th> Size</th>
+            <th>Colour</th>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <p>This is Bottom Container </p> -->
+    <div class="selection-container" id="selectionContainerBottombox">
+      <div class="pairs-container">
+        <input type="radio" name="orderSelection" value="3" class="order-selection" onclick="onOrderSelect(this.value)" />
+        <div class="number-of-pairs-container">
+          <div>
+            <p> 3 Pairs</p>
+            <p> DKK 528.00</p>
+          </div>
+        </div>
+        <div class="percentage-off">
+          <p> 60% OFF</p>
+        </div>
+      </div>
+      <div id="selectionContainer3" class="table-display">
+        <table>
+          <tr class="size-color">
+            <th></th>
+            <th>Size</th>
+            <th>Colour</th>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </td>
+            <td>
+              <select id="status" class="size-color">
+                <option value="white">white</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="shipping-container">
+      <p class="green-text"> Free 2 Day Shipping </p>
+      <p>Total : DKK <span id="total">00.00</span> </p>
+    </div>
+    <button class="cart-button"> + Add to Cart</button>
+    <div class="copyright-container">
+      <p class="copyright-text"> <span>&copy;</span> Powered by Pumper</p>
+    </div>
+  </div>
+</body>
+</html>
